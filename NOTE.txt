@@ -1,0 +1,1 @@
+A machine learning project to classify bottles by Eduardo, Ricardo, Julio and Michelle from Universidad Politecnica de Yucatán. 

@@ -2,7 +2,11 @@ import tensorflow as tf
 import numpy as np
 class_names = ['glass','plastic']
 # Ruta a la imagen local (reemplaza 'ruta_de_la_imagen_local.jpg' con la ruta real)
+<<<<<<< HEAD
 imagen_local = "prove3.jpeg"
+=======
+imagen_local = 'glass6.jpg'
+>>>>>>> 7e559c27b2fc30134c10196f6e7a9b6228e98253
 img_height = 180
 img_width = 180
 # Cargar la imagen local
