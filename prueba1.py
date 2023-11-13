@@ -15,10 +15,6 @@ model = tensorflow.keras.models.load_model('keras_model.h5')
 with open('labels.txt', 'r') as f:
    class_names = f.read().split('\n')
 
-
-# Create the array of the right shape to feed into the keras model
-# The 'length' or number of images you can put into the array is
-# determined by the first position in the shape tuple, in this case 1.
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 size = (224, 224)
@@ -51,13 +47,10 @@ while cap.isOpened():
 
    # run the inference
    prediction = model.predict(data)
-   #print(prediction)
 
    index = np.argmax(prediction)
    class_name = class_names[index]
    confidence_score = prediction[0][index]
-   #print("Class: ", class_name)
-   #print("Confidence score: ", confidence_score)
 
    end = time.time()
    totalTime = end - start
